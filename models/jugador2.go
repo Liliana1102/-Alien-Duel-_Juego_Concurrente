@@ -30,16 +30,16 @@ func (q *Jugador2) Run(r rune) {
 	if r == 'i' {
 
 		// Mover hacia arriba
-		q.posY -= 10 // Puedes ajustar el valor según tus necesidades
+		q.posY -= 10 
 	}
 	if r == 'k'{
 
 		// Mover hacia abajo
-		q.posY += 10 // Puedes ajustar el valor según tus necesidades
+		q.posY += 10 
 	}
 
 
-	// Limitar la posición Y dentro de los límites de la ventana
+	// Limitar la posición
 	if q.posY <= 0 {
 		q.posY = 0
 	} else if q.posY >= 550 {

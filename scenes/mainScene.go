@@ -122,14 +122,14 @@ func (s *MainMenuScene) Collicions() {
 		// Lógica para detectar colisiones con margen de error
 		if b1x+margenDeError >= n1x && b1x-margenDeError <= n1x+anchoDelEnemigo &&
 			b1y+margenDeError >= n1y && b1y-margenDeError <= n1y+altoDelEnemigo {
-			// Colisión detectada con margen de error, toma acciones necesarias
+			
 			fmt.Println("Colisión con bala 1")
 			s.window.Close()
-			// Haz algo con la colisión de la bala 1, por ejemplo, detener el juego
+			
 
 		} else if b2x+margenDeError >= n2x && b2x-margenDeError <= n2x+anchoDelEnemigo &&
 			b2y+margenDeError >= n2y && b2y-margenDeError <= n2y+altoDelEnemigo {
-			// Colisión detectada con margen de error, toma acciones necesarias
+			
 			fmt.Println("Colisión con bala 2")
 			s.window.Close()
 			// Haz algo con la colisión de la bala 2, por ejemplo, detener el juego
